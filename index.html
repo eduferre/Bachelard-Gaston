@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bachelard Gaston</title>
+    <link href="https://fonts.googleapis.com/css?family=Jomolhari&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <style type="text/css">
+     :root{
+        --ColorTextArticleReducido: black;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+  
+        body{
+            font-size: 18px;
+        }
+        img{
+        width: 100%;
+        height: 100%;
+        }
+        header{
+            width: 100%;
+            display: flex;
+        }
+    header> div{
+        width: 50%;
+        height: 60vh;
+        position: relative;
+    }
+        header div img{
+            object-fit: cover;
+            object-position: top center;
+            height: 100%;
+        }
+   
+    .bloc_esq{
+        background: red;
+        
+    }
+    .bloc_esq img{
+        object-fit:cover;
+        object-position: top center;
+    }
+    .bloc_dre{
+        background: black;
+    }
+    .blo_dre img{
+        object-fit: cover;
+        object-position: center;
+    }
+    h1{ font-family: 'Jomolhari', serif;
+        position: absolute;
+        text-align: center;
+        top:46vh;
+        width: 100%;
+        font-size: 8vw;
+        color:darkseagreen;
+        
+    }
+    h2{
+        font-family: 'Libre Baskerville', serif;
+        padding: 120px 0;
+        position: absolute;
+        text-align:center;
+        top: 49vh;
+        font-size: 2vw;
+        width: 100%;
+        color: black;
+    }
+    article{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1vw;
+        width: 37.5em;
+        margin: auto;
+   }
+    article>p:first-child{
+        padding: 8vw 0;
+        color: black;
+        column-count: 2;
+        column-gap: 30px;
+        text-align: justify;
+        hyphens: auto;
+        column-rule: 1px solid grey;
+        line-height: 1.4em;      
+    }
+    article #cos>p:first-child::first-letter{
+        color: darkseagreen;
+        font-size: 5em;
+        font-family: 'Roboto', 'san serif';
+        float: left;
+        padding-right: 0.2em;
+        padding-top: -0.4em;
+        padding-bottom: 0.3em;
+    }
+    article #cos{
+        width: auto;
+        padding: 0 3em;
+        text-align: justify;
+        hyphens: auto;
+        line-height: 1.4em;
+       
+    }
+    article #cos p{
+        padding: 0 0 1.5em 0; 
+    }
+    .circulo, .hexagono{
+        background: darkseagreen;
+    }
+    .circulo img, hexagono img{
+        mix-blend-mode: hard-light;
+    }
+    .circulo, .circulo img{
+        border-radius: 50%;
+        
+    }
+    .circulo{
+        margin-left: -5em;
+        max-width: 20em;
+        float: left;
+      shape-margin: 1em;
+        }
+         .hexagono, .hexagono{
+     clip-path: polygon(48% 19%, 100% 0, 100% 76%, 47% 99%, 0% 75%, 0 0);
+        }
+       .hexagono{
+        max-width: 20em;
+        float: right;
+        margin-right: -8em;
+        shape-margin: 2em;
+        shape-outside:  polygon(48% 19%, 100% 0, 100% 76%, 47% 99%, 0% 75%, 0 0);
+    }
+    
+   
+    @media (max-width:600px){
+        body{
+            background: azure;
+            font-size: 12px;
+            color: var(--ColorTextArticleReducido);
+        }
+        h1{
+            color:white;
+         }
+        h2{
+            color: white;
+        }
+        article>p:first-child{
+            color: white;
+        }
+     </style>
+    </head>
+       <body>
+          <header>
+             <div class="bloc_esq">
+            <img src="img/foto2.jpg">
+            </div>
+         <div class="bloc_dre">
+              <img src="img/foto3.jpg">
+        
+         </div >
+         <h1>Bachelard Gaston</h1>    
+        <h2>Filósofo, epistemólogo, poeta, físico, profesor y crítico literario francés. </h2>
+         </header>  
+          <article>
+             <p> Gaston Bachelard, hijo de artesanos, nació en Bar-sur-Aube, una localidad en la Champaña, donde será inhumado a su muerte en 1962. Entre 1895 y 1902 hizo la enseñanza secundaria en su pueblo, Bar-sur-Aube. Inicialmente, en 1902-1903, Bachelard dio clases en el colegio Sézanne; pero enseguida entró en el servicio de Correos y Telégrafos, donde estuvo diez años, 1903-1913: primero en Remiremont, hasta 1905, y luego en París, con un año de interrupción para el servicio militar.
+             </p>
+             <div id="cos">
+             
+            <p>Se casó en 1914 con Jeanne Rossi, una joven profesora de su tierra. Al enviudar en 1920 se quedaría solo con su hija Suzanne, que será su albacea y le acompañará. De inmediato tomará parte en la Guerra, pues fue movilizado de 1914 a 1919 (recibió por sus acciones el galardón: Croix de guerre 1914-1918).Como había seguido estudiando de por libre, entre 1919-1930 va a dedicarse a sus tareas como profesor en su población natal. De hecho en 1920, se había licenciado ya en filosofía, y en 1922 logró ser agregado de filosofía, disciplina que enseñó por entonces en Bar-sur-Aube. También enseñaba ciencias (física). En 1927 dio clases y cursos de Letras, en Dijon.
+             </p>
+              <div class="circulo">
+             <img src="img/foto1.jpg">
+              </div>
+             
+             <p>Su mayor impacto lo provocó como maestro y teórico en la École nationale des ponts et chaussées entre 1778 y 1788, desarrollando un estilo geométrico abstracto distintivo inspirado por formas clásicas. Su obra se caracterizó por la eliminación de toda la ornamentación innecesaria, hinchando las formas geométricas hasta una escala enorme y repitiendo elementos como columnas en grandes series.
+             Boullée promovió la idea de hacer arquitectura expresiva de su propósito, una doctrina que sus detractores llamaron architecture parlante («arquitectura parlante»), que fue un elemento esencial en la formación arquitectónica Beaux-Arts en el final del siglo XIX.
+             </p>
+             <div class="hexagono">
+             <img src="img/foto4.jpg">
+             </div>
+             <p>
+             En sus obras El nuevo espíritu científico (1934) y La formación del espíritu científico (1938) expone sus ideas sobre la Filosofía de la Ciencia. Su obra más importante en este terreno es El materialismo racional (1953). Supone su planteamiento una superación del debate empirismo/racionalismo, que combate a cada uno de ellos por separado, así en El nuevo espíritu científico.
+             </p>
+              </div>
+           </article>    
+          </body>
+</html>
